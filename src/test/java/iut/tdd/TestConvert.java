@@ -109,8 +109,14 @@ public class TestConvert {
 	public void test_num2text_mille(){
 		Assert.assertEquals("mille",Convert.num2text("1000"));
 	}
-			
-	
+	@Test
+	public void test_num2text_million(){
+		Assert.assertEquals("million",Convert.num2text("1000000"));
+	}
+	@Test
+	public void test_num2text_milliard(){
+		Assert.assertEquals("milliard",Convert.num2text("1000000000"));
+	}
 	
 	
 	
